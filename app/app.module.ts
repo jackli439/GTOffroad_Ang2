@@ -5,6 +5,7 @@ import { HttpModule, JsonpModule } from '@angular/http';
 
 import { AppComponent }  from './app.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
+import { GtorInfoComponent } from './gtor_info/gtor_info.component';
 import { routing } from './app.routes';
 
 @NgModule({
@@ -17,7 +18,8 @@ import { routing } from './app.routes';
   ],
   declarations: [ 
   	AppComponent,
-  	MainpageComponent
+  	MainpageComponent,
+    GtorInfoComponent
   ],
   bootstrap:    [ AppComponent ]
 })

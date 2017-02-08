@@ -2,6 +2,7 @@ import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { mainpageRoutes }    from './mainpage/mainpage.routes';
+import { gtor_infoRoutes }    from './gtor_info/gtor_info.routes';
 
 export const routes: Routes = [
   {
@@ -9,7 +10,8 @@ export const routes: Routes = [
     redirectTo: '/mainpage',
     pathMatch: 'full'
   },
-  ...mainpageRoutes
+  ...mainpageRoutes,
+  ...gtor_infoRoutes
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(routes);
