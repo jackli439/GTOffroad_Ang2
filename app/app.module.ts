@@ -6,6 +6,9 @@ import { HttpModule, JsonpModule } from '@angular/http';
 import { AppComponent }  from './app.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { GtorInfoComponent } from './gtor_info/gtor_info.component';
+import { BoxItemComponent } from './components/box_item/boxItem.component'
+import { HeaderComponent } from './components/header/header.component'
+import { FooterComponent } from './components/footer/footer.component'
 import { routing } from './app.routes';
 
 @NgModule({
@@ -19,7 +22,10 @@ import { routing } from './app.routes';
   declarations: [ 
   	AppComponent,
   	MainpageComponent,
-    GtorInfoComponent
+    GtorInfoComponent,
+    BoxItemComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   bootstrap:    [ AppComponent ]
 })
