@@ -3,12 +3,12 @@ import { AppServices } from './../services/getTextfile.service'
 
 @Component({
   moduleId: module.id,
-  templateUrl: './mainpage.html',
-  styleUrls: ['./mainpage.styles.css'],
+  templateUrl: './rankings.html',
+  styleUrls: ['./rankings.styles.css'],
   providers: [ AppServices ]
 })
 
-export class MainpageComponent implements OnInit {
+export class RankingsComponent implements OnInit {
 	boxes: any;
 	resData: any;
 

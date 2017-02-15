@@ -3,12 +3,12 @@ import { AppServices } from './../services/getTextfile.service'
 
 @Component({
   moduleId: module.id,
-  templateUrl: './mainpage.html',
-  styleUrls: ['./mainpage.styles.css'],
+  templateUrl: './how_do_i_join.html',
+  styleUrls: ['./how_do_i_join.styles.css'],
   providers: [ AppServices ]
 })
 
-export class MainpageComponent implements OnInit {
+export class HowDoIJoinComponent implements OnInit {
 	boxes: any;
 	resData: any;
 

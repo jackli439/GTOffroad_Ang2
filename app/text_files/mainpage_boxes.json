@@ -1,0 +1,58 @@
+{
+    "Calendar": {
+        "desc": "Calendar",
+        "link": "calendar",
+        "text": ""
+    },
+    
+
+    "WhatIsGtor": {
+        "desc": "What is GTOR?",
+        "link": "gtor_info", 
+        "text": ""
+    },
+
+       
+    "HowDoIJoin": {
+        "desc": "How Do I Join?",
+        "link": "how_do_i_join",
+        "text": "" 
+    },
+    
+    "Interested": {
+        "desc": "Interested?",
+        "link": "interested",
+        "text": ""
+    },
+
+
+    "PhotosAndVid": {
+        "desc": "Photos",
+        "link": "photosandvideos",  
+        "text": ""
+    },
+    
+    "History": {
+        "desc": "",
+        "link": "mainpage",
+        "text": ""
+    },
+
+    "Rankings": {
+        "desc": "Rankings",
+        "link": "rankings",
+        "text": ""
+    },
+    
+    "Contact": {
+        "desc": "",
+        "link": "mainpage",
+        "text": ""
+    },
+
+    "Sponsors": {
+        "desc": "Sponsors",
+        "link": "sponsors",
+        "text": ""
+    }        
+}

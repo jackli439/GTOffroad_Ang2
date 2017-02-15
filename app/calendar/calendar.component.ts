@@ -3,12 +3,12 @@ import { AppServices } from './../services/getTextfile.service'
 
 @Component({
   moduleId: module.id,
-  templateUrl: './mainpage.html',
-  styleUrls: ['./mainpage.styles.css'],
+  templateUrl: './calendar.html',
+  styleUrls: ['./calendar.styles.css'],
   providers: [ AppServices ]
 })
 
-export class MainpageComponent implements OnInit {
+export class CalendarComponent implements OnInit {
 	boxes: any;
 	resData: any;
 

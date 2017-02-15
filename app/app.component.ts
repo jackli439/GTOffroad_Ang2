@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef} from '@angular/core';
+import { Router, NavigationStart, NavigationEnd, NavigationError, NavigationCancel, RoutesRecognized } from '@angular/router';
+
 
 @Component({
   moduleId: module.id,
@@ -7,4 +9,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.styles.css']
 
 })
-export class AppComponent{}
+export class AppComponent{
+	@ViewChild('pageTop') input:ElementRef; 
+
+	constructor(router:Router) {
+		router.events.forEach((event) => {
+			if(event instanceof NavigationEnd) {
+				console.log(this.input.nativeElement);
+				this.input.nativeElement.scrollTop = 0;
+			}
+		});
+	}
+}

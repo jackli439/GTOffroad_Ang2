@@ -1,3 +1,165 @@
-div {
-	background: blue;
+.mainpage-allbox{
+    position: absolute;
+    overflow: hidden;
+    background: rgb(31,31,31);
+    font-size: 20px;
+    box-shadow: inset 0px 0px 15px 4px black;
+    -webkit-box-shadow: inset 0px 0px 15px 4px black;
+    -moz-box-shadow: inset 0px 0px 15px 4px black;
+}
+
+.mainpage-box0{
+	text-align: center;
+    width: 30%;
+    left:0;
+    height:30%;
+}
+
+.mainpage-box1{
+    width: 40%;
+    left:30%;
+    height:50%;
+}
+
+.mainpage-box2{
+    width: 30%;
+    right:0;
+    height:40%;
+}
+
+.mainpage-box3{
+    width: 30%;
+    left:0;
+    top:30%;
+    height:20%;
+}
+
+.mainpage-box4{
+    width: 70%;
+    top:50%;
+    left:0%;
+    height:30%;
+}
+
+.mainpage-box5{
+    width: 30%;
+    top:40%;
+    right:0%;
+    height:30%;
+}
+
+.mainpage-box6{
+    width: 30%;
+    top:70%;
+    right:0%;
+    height:30%;
+}
+
+.mainpage-box7{
+    width: 40%;
+    top:80%;
+    left:0%;
+    height:20%;
+}
+
+.mainpage-box8{
+    width: 30%;
+    top:80%;
+    left:40%;
+    height:20%;
+}
+
+.mainpage-box0-picture{
+    position: absolute;
+    width: 130%;
+    left: -30%;
+    height: 100%;
+}
+.mainpage-box1-picture{
+    position: absolute;
+    left: -200px;
+    width:200%;
+    height: 100%;
+
+}
+.mainpage-box2-picture{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.mainpage-box3-picture{
+    position: absolute;
+    
+    width:100%;
+    height: 100%;
+}
+.mainpage-box5-picture{
+    position: absolute;
+    width:200%;
+    left: -200px;
+    height: 100%;
+}
+.mainpage-box6-picture{
+    position: absolute;
+    width:150%;
+    left: -30%;
+    height: 100%;
+}
+.mainpage-box7-picture{
+    position: absolute;
+    width:130%;
+    left: -30%;
+    height: 130%;
+}
+.mainpage-box8-picture{
+    position: absolute;
+    width:110%;
+    left: 0%;
+    height: 110%;
+}
+
+.mainpage-box-shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: black;
+	opacity: .25;
+    -webkit-transition: .2s linear;
+    -moz-transition: .2s linear;
+    -o-transition: .2s linear;
+    transition: .2s linear;
+
+}
+.mainpage-box-shadow:hover {
+    opacity: 0;
+}
+
+.mainpage-box-text{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    font-size: 22pt;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom:25px;
+    color: white;
+}
+
+.mainpage-box-bodytext{
+	position: absolute;
+	overflow-y:scroll;
+	bottom: 75px;
+	top:0;
+	padding: 40px;
+	margin-right: -25px;
+	padding-right: 40px;
+	padding-top:60px;
+	line-height: 175%;
+    color: lightgray;
+    font-size: 17px;
+	
 }

@@ -1,3 +1,24 @@
-<div>
-boxitem
+
+
+<div class="mainpage-box{{boxNum}} mainpage-allbox">
+	
+    <a routerLink="/{{boxData.link}}">
+        <div class= "mainpage-box-shadow">
+
+        </div>
+    </a>
+    <div class="mainpage-box-text">
+        {{boxData.desc}} 
+
+    </div>
+
+    <div *ngIf="boxData.text" class="mainpage-box-bodytext">
+        {{boxData.text}}
+    </div>
+    
+    <div class="mainpage-box{{boxNum}}-picture " 
+         *ngIf="boxNum != 4" >
+
+        <img src="/app/images/img{{boxNum}}.jpg" width="100%" height="100%"/>
+    </div>
 </div>
