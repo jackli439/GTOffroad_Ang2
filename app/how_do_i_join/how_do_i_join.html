@@ -1,4 +1,15 @@
-<div>
-	how do i join
-</div>
+<div class="howdoijoin-container">
+	<h2>Overview</h2>
 
+	<div *ngFor="let item of infoText" class="howdoijoin-item">
+		<div class="howdoijoin-desc-container">
+			{{item.text}}
+		</div>
+    	<div *ngIf="item.photo != ''" class="howdoijoin-image-container">
+        	<img src="{{item.photo}}" width="100%" height="100%"/>
+    	</div>
+	</div>
+	
+
+
+</div>

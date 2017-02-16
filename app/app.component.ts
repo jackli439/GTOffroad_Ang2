@@ -15,7 +15,6 @@ export class AppComponent{
 	constructor(router:Router) {
 		router.events.forEach((event) => {
 			if(event instanceof NavigationEnd) {
-				console.log(this.input.nativeElement);
 				this.input.nativeElement.scrollTop = 0;
 			}
 		});

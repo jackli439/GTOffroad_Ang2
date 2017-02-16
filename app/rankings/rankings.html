@@ -1,4 +1,23 @@
-<div>
-	rankings
-</div>
+<div class="ranking-box-container">
+    <h2>Rankings</h2>
+        <div *ngFor="let rank of rankings" class="ranking-item">
+			<hr/>
+        	<div class="ranking-item-container" >
+            	<h2>{{rank.year}}</h2>
+            	<div class="ranking-background-img">
+                	<img src="/app/images/ranking_photos/{{rank.year}}-min.jpg" width="100%" height="100%"/>
+            	</div>
 
+            	<div *ngFor="let location of rank.locations; let i = index">
+	                <div class="ranking-location-container">
+	                    <h3>{{location.name}}</h3>
+	                    <div *ngFor="let event of location[location.name]">
+	                        #{{event.place}}: {{event.event}}
+	                    </div>
+
+	                </div>
+                	<div class="rankings-break" *ngIf="3 % i == 1" ></div>
+            	</div>
+        	</div>
+		</div>
+</div>

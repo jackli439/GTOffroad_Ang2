@@ -1,0 +1,17 @@
+{
+	"descriptions": [
+		{
+			"text" : "We design and build an off-road vehicle from scratch. For our competitions, we travel around the country to test our designs against over 200 colleges from around the world. The cars are judged based on design report and analysis, cost, acceleration, braking, hill climb, tractor pull, mud bog, rock crawling, and a 4 hour endurance race. Points earned in each of these events are totaled up to determine the final rankings. We are a completely student run organization with faculty advisers at Georgia Tech.",
+			"photo" : "/app/images/gtor_info/overview.jpg"
+
+		},
+		{
+			"text" : "The student members are responsible for the design, analysis, and fabrication of the car. Members get to see their designs advance through design and fabrication and eventually see them in competition with other teams designs. Manufacturing team members are trained in all of the machining skills they will need to fabricate the parts of the car, so no experience with either cars or machining is necessary to join the team.",
+			"photo" : "/app/images/gtor_info/design.jpg"
+		},
+		{
+			"text" : "Likewise, design team members are trained in all necessary skills and knowledge to complete their task such as CAD, the design process, engineering analysis methods, and knowledge of the particular subsystem they are working in. There are a few standards that all teams must follow. The most important of these are the strict safety standards set by SAE. Also, all teams are given identical Briggs & Straton 10hp motors that they must use. Aside from that, teams have the freedom to design the car however they want.",
+			"photo" : "/app/images/gtor_info/moreinfo.jpg"
+		}
+	]
+}

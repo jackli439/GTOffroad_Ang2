@@ -16,9 +16,35 @@
         {{boxData.text}}
     </div>
     
-    <div class="mainpage-box{{boxNum}}-picture " 
-         *ngIf="boxNum != 4" >
 
+
+    <div class="mainpage-slideshow-right-show" 
+         [ngClass]="{'mainpage-slideshow-highlight' : true}"
+         *ngIf="boxNum == 4" (click)="changeSlide(1)">
+        <div class="fa fa-chevron-right mainpage-slideshow-right-icon">
+
+        </div>
+    </div>    
+    
+    <div class="mainpage-slideshow-left-show" 
+         [ngClass]="{'mainpage-slideshow-highlight' : true}"
+         *ngIf="boxNum == 4" (click)="changeSlide(0)">
+        <div class="fa fa-chevron-left mainpage-slideshow-left-icon">
+
+        </div>
+    </div>
+
+    <div class="mainpage-box{{boxNum}}-picture" 
+         *ngIf="boxNum != 4" >
         <img src="/app/images/img{{boxNum}}.jpg" width="100%" height="100%"/>
     </div>
+
+    <div  *ngIf="boxNum == 4">
+        <div *ngFor="let image of imageCycle">
+            <div class="mainpage-box-slideshow" *ngIf="image.num == currentSlide" [@myAnimation]="image.num == currentSlide" >
+                <img src="{{image.src}}" width="100%" height="100%"/>        
+            </div>
+        </div>
+    </div>
+
 </div>

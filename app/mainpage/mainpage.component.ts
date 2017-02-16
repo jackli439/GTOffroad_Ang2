@@ -40,12 +40,6 @@ export class MainpageComponent implements OnInit {
             this.resData.Contact,
             this.resData.Sponsors
 		];
-
-		for (let box of this.boxes){
-			box.hover = false;
-		}
-
-		console.log(this.boxes);
 	}
 
 }

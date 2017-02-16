@@ -1,15 +1,33 @@
 .interested-container {
     position: relative;
-    height: 1400px;
     width: 100%;
-    max-height: 1100px;
     max-width: 900px;
     margin-top: 0px;
     margin-bottom: 200px;
     left: 0;
     right: 0;
     top: 100px;
-    background: rgb(150,150,150);
+    background: rgb(30,30,30);
     margin-left: auto;
     margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.interested-container > h2 {
+    text-align: center;
+    color: rgb(255,217,102);
+    font-style: italic;
+}
+
+.interested-form{
+    width: 732px;
+    position: relative;
+    top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-bottom: 100px;
 }

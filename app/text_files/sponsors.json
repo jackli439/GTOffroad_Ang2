@@ -1,0 +1,65 @@
+{
+        "sponsors": [
+                {
+                        "name": "gm",
+                        "link": "http://www.gm.com/",
+                        "photo": "gm.png"
+
+                }, 
+                {
+                        "name": "caterpillar",
+                        "link": "http://www.caterpillar.com/",
+                        "photo": "caterpillar.png"
+                }, 
+                {
+                        "name": "john_deere",
+                        "link": "http://www.deere.com/",
+                        "photo": "john_deere.png"
+                }, 
+                {
+                        "name": "briggs_stratton",
+                        "link": "http://www.briggsandstratton.com/",
+                        "photo": "briggs_stratton.png"
+                }, 
+                {
+                        "name": "chevron",
+                        "link": "http://www.chevron.com/",
+                        "photo": "chevron.png"
+                }, 
+                {
+                        "name": "sae",
+                        "link": "https://www.sae.org/",
+                        "photo": "sae.png"
+                }, 
+                {
+                        "name": "fox_shox",
+                        "link": "http://www.ridefox.com/",
+                        "photo": "fox_shox.png"
+                }, 
+                {
+                        "name": "polaris",
+                        "link": "http://www.polaris.com/",
+                        "photo": "polaris.png"
+                }, 
+                {
+                        "name": "shell",
+                        "link": "http://www.shell.com/",
+                        "photo": "shell.png"
+                }, 
+                {
+                        "name": "textron",
+                        "link": "http://www.textron.com/",
+                        "photo": "textron.png"
+                }, 
+                {
+                        "name": "tie_down",
+                        "link": "http://www.tiedown.com/",
+                        "photo": "tie_down.png"
+                }, 
+                {
+                        "name": "metlab",
+                        "link": "http://www.metlabheattreat.com/",
+                        "photo": "metlab.png"
+                }
+        ]
+}

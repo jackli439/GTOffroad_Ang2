@@ -9,43 +9,26 @@ import { AppServices } from './../services/getTextfile.service'
 })
 
 export class SponsorsComponent implements OnInit {
-	boxes: any;
+	sponsors: any;
 	resData: any;
 
 	constructor(private appService: AppServices) {
-		this.boxes = [
-			1,2,3,4,5,6
-		];
+		this.sponsors = [];
 
 
 	}
 
 	ngOnInit() { 
-    	this.appService.getFile("/app/text_files/mainpage_boxes.json").subscribe(
+    	this.appService.getFile("/app/text_files/sponsors.json").subscribe(
 	      data => { this.resData = data},
 	      err => console.error(err),
-	      () => this.parseBoxes()
+	      () => this.parseSponsors()
 	    );
 	}
 
-	parseBoxes(){
-		this.boxes = [
-           	this.resData.Calendar,
-            this.resData.WhatIsGtor,
-            this.resData.HowDoIJoin,
-            this.resData.Interested,
-            this.resData.PhotosAndVid,
-            this.resData.History,
-            this.resData.Rankings,
-            this.resData.Contact,
-            this.resData.Sponsors
-		];
-
-		for (let box of this.boxes){
-			box.hover = false;
-		}
-
-		console.log(this.boxes);
+	parseSponsors(){
+		this.sponsors = this.resData.sponsors;
+		console.log(this.sponsors);
 	}
 
 }

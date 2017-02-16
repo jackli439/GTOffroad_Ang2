@@ -1,4 +1,13 @@
-<div>
-	sponsors
+<div class="sponsors-container">
+    <h2>Sponsors</h2>
+    <hr/>
+    <div class="sponsor-item-container">        
+        <div class="sponsor-list-container">
+            <div class="sponsor-detail-container" *ngFor="let sponsor of sponsors">
+                <a class="sponser-item" href="{{sponsor.link}}" target="_blank">
+                    <img src="/app/images/sponsor_logos/{{sponsor.photo}}" width="100%" />
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
-

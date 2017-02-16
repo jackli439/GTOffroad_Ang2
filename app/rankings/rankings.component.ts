@@ -1,51 +1,55 @@
 import { Component, OnInit } from '@angular/core';
 import { AppServices } from './../services/getTextfile.service'
+import { OrderByPipe } from './../pipes/sortRank.pipe'
 
 @Component({
   moduleId: module.id,
   templateUrl: './rankings.html',
   styleUrls: ['./rankings.styles.css'],
-  providers: [ AppServices ]
+  providers: [ AppServices ],
+  pipes[ OrderByPipe ]
 })
 
 export class RankingsComponent implements OnInit {
-	boxes: any;
+	rankings: any;
 	resData: any;
 
 	constructor(private appService: AppServices) {
-		this.boxes = [
-			1,2,3,4,5,6
-		];
 
+		this.rankings = [];
 
 	}
 
 	ngOnInit() { 
-    	this.appService.getFile("/app/text_files/mainpage_boxes.json").subscribe(
+    	this.appService.getFile("/app/text_files/rankings.json").subscribe(
 	      data => { this.resData = data},
 	      err => console.error(err),
-	      () => this.parseBoxes()
+	      () => this.parseRankings()
 	    );
 	}
 
-	parseBoxes(){
-		this.boxes = [
-           	this.resData.Calendar,
-            this.resData.WhatIsGtor,
-            this.resData.HowDoIJoin,
-            this.resData.Interested,
-            this.resData.PhotosAndVid,
-            this.resData.History,
-            this.resData.Rankings,
-            this.resData.Contact,
-            this.resData.Sponsors
-		];
+	parseRankings(){
+		var obj = this.resData;
+		var tempArr = []
+		Object.keys(obj).forEach(function(key) {
+		    tempArr.push(obj[key]);
+		});
+		this.rankings = tempArr;
 
-		for (let box of this.boxes){
-			box.hover = false;
+		this.rankings.sort(this.compareRankYear);
+		
+		console.log(this.rankings);
+		
+	}
+
+	compareRankYear(a,b){
+		if (a.year > b.year){
+			return -1;
 		}
-
-		console.log(this.boxes);
+		if (a.year < b.year){
+			return 1;
+		}
+		return 0;
 	}
 
 }
