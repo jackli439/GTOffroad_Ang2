@@ -1,13 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { AppServices } from './../services/getTextfile.service'
-import { OrderByPipe } from './../pipes/sortRank.pipe'
 
 @Component({
   moduleId: module.id,
   templateUrl: './rankings.html',
   styleUrls: ['./rankings.styles.css'],
   providers: [ AppServices ],
-  pipes[ OrderByPipe ]
 })
 
 export class RankingsComponent implements OnInit {
@@ -30,7 +28,7 @@ export class RankingsComponent implements OnInit {
 
 	parseRankings(){
 		var obj = this.resData;
-		var tempArr = []
+		var tempArr: any = []
 		Object.keys(obj).forEach(function(key) {
 		    tempArr.push(obj[key]);
 		});
@@ -42,7 +40,7 @@ export class RankingsComponent implements OnInit {
 		
 	}
 
-	compareRankYear(a,b){
+	compareRankYear(a: any,b: any){
 		if (a.year > b.year){
 			return -1;
 		}

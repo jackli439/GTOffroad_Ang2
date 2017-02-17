@@ -55,6 +55,7 @@ export class BoxItemComponent implements OnInit{
 	}
 
 	changeSlide(direction: number){
+
 		if (direction == 0){
 			this.currentSlide = this.currentSlide - 1;
 			if (this.currentSlide < 1){

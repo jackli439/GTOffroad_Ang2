@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { AppServices } from './../services/getTextfile.service'
+declare var gapi: any;
 
 @Component({
   moduleId: module.id,
   templateUrl: './calendar.html',
   styleUrls: ['./calendar.styles.css'],
-  providers: [ AppServices ]
+  providers: [ AppServices]
 })
 
 export class CalendarComponent implements OnInit {
@@ -16,8 +17,6 @@ export class CalendarComponent implements OnInit {
 		this.boxes = [
 			1,2,3,4,5,6
 		];
-
-
 	}
 
 	ngOnInit() { 
@@ -26,6 +25,8 @@ export class CalendarComponent implements OnInit {
 	      err => console.error(err),
 	      () => this.parseBoxes()
 	    );
+
+
 	}
 
 	parseBoxes(){
@@ -49,3 +50,5 @@ export class CalendarComponent implements OnInit {
 	}
 
 }
+
+
