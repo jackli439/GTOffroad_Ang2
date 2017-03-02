@@ -1,10 +1,55 @@
 {
+	"2016" : {
+		"photo" : "2003-min.jpg",
+		"locations" : [
+			{
+				"name" : "Tennessee",
+				"events" : [
+					{
+						"event" : "Overall",
+						"place" : 65
+					},
+					{
+						"event" : "Sales Presentation",
+						"place" : 70
+					},
+					{
+						"event" : "Cost Event",
+						"place" : 59
+					},
+					{
+						"event" : "Design",
+						"place" : 39
+					},
+					{
+						"event" : "Acceleration",
+						"place" : 58
+					},
+					{
+						"event" : "Sled Pull",
+						"place" : 41
+					},
+					{
+						"event" : "Suspension",
+						"place" : 47
+					},
+					{
+						"event" : "Endurance",
+						"place" : 62
+					}
+
+				]
+			}
+
+		]
+	},
+
 	"2012": {
-		"year" : 2012,
+		"photo" : "2012-min.jpg",
 		"locations": [
 			{
 				"name" : "Auburn",
-				"Auburn": [
+				"events": [
 					{
 						"event": "Suspension and Traction",
 						"place": 12
@@ -35,11 +80,11 @@
 		]
 	},
 	"2009": {
-		"year" : 2009,
+		"photo" : "2009-min.jpg",
 		"locations": [
 			{
 				"name" : "Alabama",
-				"Alabama": [
+				"events": [
 					{
 						"event": "Overall",
 						"place": 31
@@ -66,7 +111,7 @@
 			},
 			{
 				"name" : "Wisconsin",
-				"Wisconsin": [
+				"events": [
 					{
 						"event": "Overall",
 						"place": 24
@@ -84,7 +129,7 @@
 			},
 			{
 				"name" : "Tennesse",
-				"Tennesse": [
+				"events": [
 					{
 						"event": "Overall",
 						"place": 11
@@ -112,11 +157,11 @@
 		]
 	},
 	"2008": {
-		"year" : 2008,
+		"photo" : "2008-min.jpg",
 		"locations": [
 			{
 				"name" : "Tennesse",
-				"Tennesse": [
+				"events": [
 					{
 						"event": "Overall",
 						"place": 11
@@ -131,7 +176,7 @@
 			},
 			{
 				"name" : "Montreal",
-				"Montreal": [
+				"events": [
 					{
 						"event": "Overall",
 						"place": 40
@@ -144,11 +189,11 @@
 		]
 	},
 	"2007": {
-		"year" : 2007,
+		"photo" : "2007-min.jpg",
 		"locations": [
 			{
 				"name" : "Rochester, NY",
-				"Rochester, NY": [
+				"events": [
 					{
 						"event": "Endurance",
 						"place": 32
@@ -172,7 +217,7 @@
 			},
 			{
 				"name" : "South Dakota",
-				"South Dakota": [
+				"events": [
 					{
 						"event": "Endurance",
 						"place": 56
@@ -186,11 +231,11 @@
 
 	},
 	"2006": {
-		"year" : 2006,
+		"photo" : "2006-min.jpg",
 		"locations": [
 			{
 				"name" : "Midwest",
-				"Midwest": [
+				"events": [
 					{
 						"event": "Acceleration",
 						"place": 38
@@ -202,7 +247,7 @@
 			},
 			{
 				"name" : "East",
-				"East": [
+				"events": [
 					{
 						"event": "Overall Design",
 						"place": 22
@@ -225,11 +270,11 @@
 	},
 
 	"2005": {
-		"year" : 2005,
+		"photo" : "2005-min.jpg",
 		"locations": [
 			{
 				"name" : "East",
-				"East": [
+				"events": [
 					{
 						"event": "Polaris Suspension Innovation and Design",
 						"place": 1
@@ -244,7 +289,7 @@
 			},
 			{
 				"name" : "Midwest",
-				"Midwest": [
+				"events": [
 					{
 						"event": "Endurance race",
 						"place": 25
@@ -272,11 +317,11 @@
 		]
 	},
 	"2003": {
-		"year" : 2003,
+		"photo" : "2003-min.jpg",
 		"locations": [
 			{
 				"name" : "East",
-				"East": [
+				"events": [
 					{
 						"event": "Design (silver car)",
 						"place": 6
@@ -296,7 +341,7 @@
 			},
 			{	
 				"name" : "Midwest",
-				"Midwest": [
+				"events": [
 					{
 						"event": "Endurance (silver car)",
 						"place": 10
@@ -316,7 +361,7 @@
 			},
 			{	
 				"name" : "West",
-				"West": [
+				"events": [
 					{
 						"event": "Sales",
 						"place": 6

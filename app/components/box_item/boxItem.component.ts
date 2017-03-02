@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, trigger, transition, style, animate, state} from '@angular/core';
-import { Observable } from 'rxjs/Rx';
+import { Observable, Subscription } from 'rxjs/Rx';
 
 @Component({
   moduleId: module.id,
@@ -33,6 +33,8 @@ export class BoxItemComponent implements OnInit{
 	imageCycle: any;
 	currentSlide: any;
 
+	timerSub: Subscription;
+
 	ngOnInit() {
 	    this.imageCycle = [];
 	    var totalImages = 14
@@ -48,14 +50,16 @@ export class BoxItemComponent implements OnInit{
 
 		this.currentSlide = 1;
 	    let timer = Observable.timer(2000,3000);
-	    timer.subscribe(t=> {
+	    this.timerSub = timer.subscribe(t=> {
 	        this.changeSlide(1);
 	    });
 
 	}
 
 	changeSlide(direction: number){
-
+		
+		this.timerSub.unsubscribe();
+		
 		if (direction == 0){
 			this.currentSlide = this.currentSlide - 1;
 			if (this.currentSlide < 1){
@@ -67,6 +71,12 @@ export class BoxItemComponent implements OnInit{
 				this.currentSlide = 1;
 			}
 		}
+		
+		let timer = Observable.timer(2000,3000);
+		this.timerSub = timer.subscribe(t=> {
+	        this.changeSlide(1);
+	    });
+	    
 	}
 
 }

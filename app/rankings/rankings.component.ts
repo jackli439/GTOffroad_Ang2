@@ -27,16 +27,16 @@ export class RankingsComponent implements OnInit {
 	}
 
 	parseRankings(){
+
 		var obj = this.resData;
 		var tempArr: any = []
-		Object.keys(obj).forEach(function(key) {
+		Object.keys(obj).forEach(function(key, index) {
+			obj[key.toString()]["year"] = key.toString();
 		    tempArr.push(obj[key]);
 		});
 		this.rankings = tempArr;
 
 		this.rankings.sort(this.compareRankYear);
-		
-		console.log(this.rankings);
 		
 	}
 

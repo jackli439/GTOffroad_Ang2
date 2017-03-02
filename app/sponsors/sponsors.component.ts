@@ -28,7 +28,6 @@ export class SponsorsComponent implements OnInit {
 
 	parseSponsors(){
 		this.sponsors = this.resData.sponsors;
-		console.log(this.sponsors);
 	}
 
 }

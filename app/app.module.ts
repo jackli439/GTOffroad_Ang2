@@ -2,6 +2,8 @@ import { NgModule }       from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
 import { HttpModule, JsonpModule } from '@angular/http';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+
 
 import { AppComponent }  from './app.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
@@ -40,6 +42,12 @@ import { routing } from './app.routes';
     HeaderComponent,
     FooterComponent,
     NewsComponent
+  ],
+  providers: [
+    {
+      provide: LocationStrategy, 
+      useClass: HashLocationStrategy
+    }
   ],
   bootstrap:    [ AppComponent ]
 })
