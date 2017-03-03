@@ -49,7 +49,7 @@ export class BoxItemComponent implements OnInit{
 	constructor(){
 
 		this.currentSlide = 1;
-	    let timer = Observable.timer(2000,3000);
+	    let timer = Observable.timer(5000,5000);
 	    this.timerSub = timer.subscribe(t=> {
 	        this.changeSlide(1);
 	    });
@@ -72,7 +72,7 @@ export class BoxItemComponent implements OnInit{
 			}
 		}
 		
-		let timer = Observable.timer(2000,3000);
+		let timer = Observable.timer(5000,5000);
 		this.timerSub = timer.subscribe(t=> {
 	        this.changeSlide(1);
 	    });

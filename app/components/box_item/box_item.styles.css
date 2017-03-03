@@ -168,26 +168,33 @@
     position: absolute;
     height: 100%;
     padding-top:25%;
-    padding-right:20px;
+    padding-right:15px;
+    padding-left: 15px;
     right:0;
     text-align: center;
     margin-top: -20px;
     font-size: 40px;
     color:white;
     z-index: 50;
+    background: rgba(0,0,0,0.5);
+    cursor: pointer;
 }
 
 .mainpage-slideshow-left-icon{
     position: absolute;
     height: 100%;
     padding-top:25%;
-    padding-left:20px;
+    padding-left:15px;
+    padding-right: 15px;
     left:0;
     text-align: center;
     margin-top: -20px;
     font-size: 40px;
     color:white;
     z-index: 50;
+    background: rgba(0,0,0,0.5);
+    cursor: pointer;
+    
 }
 
 .mainpage-box-slideshow{
